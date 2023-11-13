@@ -1,0 +1,24 @@
+{
+  "name": "vape-calculator",
+  "version": "0.0.1",
+  "description": "Calculator for vaping",
+  "main": "dist/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tosterakakwapisz/vape-calculator.git"
+  },
+  "keywords": [
+    "vape",
+    "calculator",
+    "vaping"
+  ],
+  "author": "TheToster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tosterakakwapisz/vape-calculator/issues"
+  },
+  "homepage": "https://github.com/tosterakakwapisz/vape-calculator#readme"
+}
