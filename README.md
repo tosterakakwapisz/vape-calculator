@@ -1,6 +1,6 @@
 # Vape calculator
 
-Calculator for vaping
+Calculator for vaping - [link](https://tosterakakwapisz.github.io/vape-calculator/dist/)
 
 ## Formula for making your own liquid mix
 
