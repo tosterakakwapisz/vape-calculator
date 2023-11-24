@@ -1,5 +1,5 @@
 import "../scss/style.scss";
 
-document.onload = () => {
+window.onload = () => {
   console.log("site loaded");
 };
