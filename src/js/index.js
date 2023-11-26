@@ -1,3 +1,4 @@
+import "bootstrap";
 import "../scss/style.scss";
 
 window.onload = () => {
