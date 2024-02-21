@@ -1,20 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vape calculator</title>
   </head>
-  <body class="bg-dark text-light">
+  <body>
     <div class="container">
       <div class="row">
         <div class="col-6 offset-3 mt-4">
-          <h1>Welcome to the Vape calculator!</h1>
+          <h1 class="text-center">Vape calculator</h1>
 
           <p>
             This tool will make Your life easier when trying to figure out how
             much nicotine do You need for certain bottle volume and more :D
           </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-8 offset-2">
+          <form id="calculate">
+            <div class="row">
+              <div class="col-4">
+                <label for="input_bottle" class="form-label">
+                  Butelka (ml)
+                </label>
+                <input type="text" class="form-control" id="input_bottle" />
+              </div>
+              <div class="col-4">
+                <label for="input_power" class="form-label">
+                  Moc liquid'u (mg/ml)
+                </label>
+                <input type="text" class="form-control" id="input_power" />
+              </div>
+              <div class="col-4">
+                <label for="input_nicotine_in_shot" class="form-label">
+                  Nikotyna w szocie (mg)
+                </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="input_nicotine_in_shot"
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn btn-primary">Oblicz</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-6 offset-3">
+          <h3 class="text-center">Wyniki:</h3>
+
+          <p id="results">some results</p>
         </div>
       </div>
     </div>
