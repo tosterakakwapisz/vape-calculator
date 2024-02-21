@@ -3,6 +3,7 @@ import "../scss/style.scss";
 
 const INPUT_REGEX = /\d+/;
 const CALCULATE_FORM_ID = "calculate",
+  RESULTS_EL_ID = "results",
   BOTTLE_INPUT_ID = "input_bottle",
   STRENGTH_INPUT_ID = "input_strength",
   NICOTINE_SHOT_INPUT_ID = "input_nicotine_shot";
@@ -38,12 +39,15 @@ function onSubmit(event) {
     return null;
   }
 
+  let resultsElement = document.getElementById(RESULTS_EL_ID);
+  if (!resultsElement) return;
+
   let calculatedNicotineAmount = calculateNicotineAmount(
     bottleVolume,
     nicotineStrength,
   );
 
-  console.log(`Nicotine amount: ${calculatedNicotineAmount}`);
+  resultsElement.innerText = `Aby otrzymać ${nicotineStrength} [mg/ml] w butelce ${bottleVolume} [ml], trzeba dodać do butelki ${calculatedNicotineAmount} [mg] nikotyny`;
 }
 
 /**
