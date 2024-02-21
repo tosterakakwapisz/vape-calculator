@@ -1,6 +1,6 @@
 {
   "name": "vape-calculator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Calculator for vaping",
   "main": "dist/js/index.js",
   "type": "module",
