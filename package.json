@@ -1,6 +1,6 @@
 {
   "name": "vape-calculator",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Calculator for vaping",
   "main": "src/main.js",
   "type": "module",
