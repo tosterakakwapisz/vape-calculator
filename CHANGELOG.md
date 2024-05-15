@@ -2,6 +2,7 @@
 
 - Fix: active and exact active classes for vue router
 - Fix: rename navbar items
+- Update: js src in main html file, favicon, logo
 
 ## 2.0.3
 
