@@ -35,7 +35,7 @@
                 <ul class="navbar-nav">
                   <li class="nav-item">
                     <RouterLink :to="{ name: 'home' }" class="nav-link">
-                      Home
+                      Strona główna
                     </RouterLink>
                   </li>
                   <li class="nav-item">
@@ -43,7 +43,7 @@
                       :to="{ name: 'liquid-mixing' }"
                       class="nav-link"
                     >
-                      Liquid mixing
+                      Mieszanie liquid'u
                     </RouterLink>
                   </li>
                 </ul>

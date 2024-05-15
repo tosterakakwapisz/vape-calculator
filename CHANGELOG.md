@@ -1,6 +1,7 @@
 # CHANGELOG
 
 - Fix: active and exact active classes for vue router
+- Fix: rename navbar items
 
 ## 2.0.3
 
