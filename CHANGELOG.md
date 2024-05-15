@@ -1,5 +1,7 @@
 # CHANGELOG
 
+## 2.0.2
+
 - Fix: add prefix to fix routing for github pages
 
 ## 2.0.1
