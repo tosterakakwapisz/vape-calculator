@@ -1,5 +1,7 @@
 # CHANGELOG
 
+- Fix: active and exact active classes for vue router
+
 ## 2.0.3
 
 - Fix: yet another fix for routing on github pages
