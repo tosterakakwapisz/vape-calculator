@@ -1,5 +1,7 @@
 # CHANGELOG
 
+- Fix: add prefix to fix routing for github pages
+
 ## 2.0.1
 
 - Fix: vite config for github pages
