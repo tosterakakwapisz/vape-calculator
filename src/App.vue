@@ -31,10 +31,14 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <RouterLink to="/" class="nav-link">Home</RouterLink>
+              <RouterLink :to="{ name: 'home' }" class="nav-link">
+                Home
+              </RouterLink>
             </li>
             <li class="nav-item">
-              <RouterLink to="/about" class="nav-link">About</RouterLink>
+              <RouterLink :to="{ name: 'liquid-mixing' }" class="nav-link">
+                Liquid mixing
+              </RouterLink>
             </li>
           </ul>
         </div>
