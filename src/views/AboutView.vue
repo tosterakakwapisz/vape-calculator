@@ -1,1 +1,1 @@
-<template>This is about page</template>
+<template>This is an about page</template>

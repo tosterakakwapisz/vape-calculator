@@ -18,6 +18,8 @@ const router = createRouter({
       component: () => import("../views/AboutView.vue"),
     },
   ],
+  linkActiveClass: "active",
+  linkExactActiveClass: "active exact-active",
 });
 
 export default router;
