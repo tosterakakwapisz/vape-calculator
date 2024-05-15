@@ -1,6 +1,7 @@
 # CHANGELOG
 
 - Fix: yet another fix for routing on github pages
+- New: add script for releasing
 
 ## 2.0.2
 
