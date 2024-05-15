@@ -2,6 +2,7 @@
   "name": "vape-calculator",
   "version": "1.0.0",
   "description": "Calculator for vaping",
+  "main": "src/main.js",
   "type": "module",
   "repository": {
     "type": "git",
