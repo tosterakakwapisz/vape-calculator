@@ -1,15 +1,16 @@
 <template>
   <div class="row">
     <div class="col">
-      <h1>Ilość nikotyny</h1>
+      <h1>Moc liquid'u</h1>
       <p class="pt-2">
-        Oblicz ile nikotyny musisz wlać do butelki, aby osiągnąć żądaną moc.
+        Oblicz moc liquid'u przy dolaniu podanej ilości nikotyny do butelki.
         <br />
         Wymagane dane:
       </p>
       <ul>
         <li>pojemność butelki [ml]</li>
-        <li>moc liquid'u [mg/ml] (standardowa jednostka)</li>
+        <li>ilość nikotyny w szocie [mg]</li>
+        <li>liczba szotów</li>
       </ul>
     </div>
   </div>
@@ -19,24 +20,31 @@
         <div class="col">
           <LiquidInputField
             id="bottleVolume"
-            description="Butelka (ml)"
-            :value="bottleVolume"
-            @update-input="updateBottleVolume"
+            description="Butelka [ml]"
+            v-model:input-value="data.bottleVolume"
           ></LiquidInputField>
         </div>
       </div>
       <div class="row mt-3">
         <div class="col">
           <LiquidInputField
-            id="mixStrength"
-            description="Moc liquid'u (mg/ml)"
-            :value="mixStrength"
-            @update-input="updateMixStrength"
+            id="nicotineShotAmount"
+            description="Ilość nikotyny w szocie [mg]"
+            v-model:input-value="data.nicotineShotAmount"
           ></LiquidInputField>
         </div>
       </div>
       <div class="row mt-3">
-        <div class="col">Ilość nikotyny: {{ nicotineAmount }}mg</div>
+        <div class="col">
+          <LiquidInputField
+            id="nicotineShotCount"
+            description="Ilość szotów"
+            v-model:input-value="data.nicotineShotCount"
+          ></LiquidInputField>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col">Moc liquid'u: {{ liquidStrength }}mg/ml</div>
       </div>
     </div>
   </div>
@@ -46,18 +54,17 @@
   import LiquidInputField from "@/components/LiquidInputField.vue";
   import { computed, ref } from "vue";
 
-  const bottleVolume = ref(150);
-  const mixStrength = ref(6);
+  const data = ref({
+    bottleVolume: 150,
+    nicotineShotAmount: 200,
+    nicotineShotCount: 3,
+  });
 
-  const nicotineAmount = computed(() => bottleVolume.value * mixStrength.value);
+  const liquidStrength = computed(() => {
+    let strength =
+      (data.value.nicotineShotAmount * data.value.nicotineShotCount) /
+      data.value.bottleVolume;
 
-  /** @param {number} newValue */
-  function updateBottleVolume(newValue) {
-    bottleVolume.value = newValue;
-  }
-
-  /** @param {number} newValue */
-  function updateMixStrength(newValue) {
-    mixStrength.value = newValue;
-  }
+    return strength.toFixed(2);
+  });
 </script>
