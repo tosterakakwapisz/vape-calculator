@@ -40,7 +40,15 @@
                   </li>
                   <li class="nav-item">
                     <RouterLink
-                      :to="{ name: 'liquid-mixing' }"
+                      :to="{ name: 'liquid-mixing-nicotine' }"
+                      class="nav-link"
+                    >
+                      Ilość nikotyny
+                    </RouterLink>
+                  </li>
+                  <li class="nav-item">
+                    <RouterLink
+                      :to="{ name: 'liquid-mixing-strength' }"
                       class="nav-link"
                     >
                       Moc liquid'u

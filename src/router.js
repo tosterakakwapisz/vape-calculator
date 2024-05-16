@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import LiquidMixingView from "@/views/LiquidMixingView.vue";
 import HomeView from "@/views/HomeView.vue";
+import LiquidMixingNicotineView from "@/views/LiquidMixingNicotineView.vue";
+import LiquidMixingStrengthView from "./views/LiquidMixingStrengthView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,9 +15,14 @@ const router = createRouter({
           component: HomeView,
         },
         {
-          path: "liquid-mixing",
-          name: "liquid-mixing",
-          component: LiquidMixingView,
+          path: "liquid-mixing/nicotine",
+          name: "liquid-mixing-nicotine",
+          component: LiquidMixingNicotineView,
+        },
+        {
+          path: "liquid-mixing/strength",
+          name: "liquid-mixing-strength",
+          component: LiquidMixingStrengthView,
         },
       ],
     },
