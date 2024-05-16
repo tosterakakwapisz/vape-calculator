@@ -21,8 +21,7 @@
           <LiquidInputField
             id="bottleVolume"
             description="Butelka [ml]"
-            :value="data.bottleVolume"
-            @update-input="updateDataValue"
+            v-model:input-value="data.bottleVolume"
           ></LiquidInputField>
         </div>
       </div>
@@ -31,8 +30,7 @@
           <LiquidInputField
             id="mixStrength"
             description="Moc liquid'u [mg/ml]"
-            :value="data.mixStrength"
-            @update-input="updateDataValue"
+            v-model:input-value="data.mixStrength"
           ></LiquidInputField>
         </div>
       </div>
@@ -41,8 +39,7 @@
           <LiquidInputField
             id="nicotineShotAmount"
             description="Ilość nikotyny w szocie [mg]"
-            :value="data.nicotineShotAmount"
-            @update-input="updateDataValue"
+            v-model:input-value="data.nicotineShotAmount"
           ></LiquidInputField>
         </div>
       </div>
@@ -69,9 +66,10 @@
   const nicotineAmount = computed(
     () => data.value.bottleVolume * data.value.mixStrength,
   );
-  const nicotineShotCount = computed(
-    () => nicotineAmount.value / data.value.nicotineShotAmount,
-  );
+  const nicotineShotCount = computed(() => {
+    let count = nicotineAmount.value / data.value.nicotineShotAmount;
+    return count.toFixed(2);
+  });
 
   /**
    * @param {number} newValue

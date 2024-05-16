@@ -7,6 +7,7 @@
 - Update: views for 2 different type of calculations
 - Update: page for calculating nicotine now shows how many shots do you need to use
 - New: calculate strength view
+- Improve: way of binding data and making data checks when updating values. Also improve code readability
 
 ## 2.0.3
 
