@@ -5,6 +5,7 @@
 - Update: js src in main html file, favicon, logo
 - Update: text in app
 - Update: views for 2 different type of calculations
+- Update: page for calculating nicotine now shows how many shots do you need to use
 
 ## 2.0.3
 

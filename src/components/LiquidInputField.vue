@@ -10,7 +10,7 @@
 </template>
 
 <script setup>
-  defineProps({
+  const props = defineProps({
     id: {
       type: String,
       required: true,
@@ -25,15 +25,11 @@
     },
   });
 
-  const emit = defineEmits({
-    "update-input": function (newValue) {
-      return typeof newValue === "number";
-    },
-  });
+  const emit = defineEmits(["updateInput"]);
 
   /** @param {string} newValue */
   function updateInput(newValue) {
     const parsedValue = newValue ? parseInt(newValue) : 0;
-    emit("update-input", parsedValue);
+    emit("updateInput", parsedValue, props.id);
   }
 </script>
