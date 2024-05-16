@@ -43,7 +43,7 @@
                       :to="{ name: 'liquid-mixing' }"
                       class="nav-link"
                     >
-                      Mieszanie liquid'u
+                      Moc liquid'u
                     </RouterLink>
                   </li>
                 </ul>

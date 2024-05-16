@@ -1,7 +1,11 @@
 <template>
-  <h1>Welcome do vape calculator!</h1>
+  <h1>Kalkulator do wapowania</h1>
   <p>
-    This tool will make Your life easier when trying to figure out how much
-    nicotine do You need for certain bottle volume and more :D
+    To narzędzie sprawi, że łatwiej będzie Ci mieszać liquid'y do e-papierosów.
+  </p>
+  <p>
+    Na przykład w butelce 150ml chcesz mieć 6tkę (moc), a nie wiesz ile szotów
+    dodać do butelki. Wchodzisz w zakładkę 'Ilość nikotyny', wpisujesz dane, a
+    kalkulator wszystko Ci opisze :D
   </p>
 </template>
