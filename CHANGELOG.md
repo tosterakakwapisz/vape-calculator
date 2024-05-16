@@ -3,6 +3,8 @@
 - Fix: active and exact active classes for vue router
 - Fix: rename navbar items
 - Update: js src in main html file, favicon, logo
+- Update: text in app
+- Update: views for 2 different type of calculations
 
 ## 2.0.3
 
