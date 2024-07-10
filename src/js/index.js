@@ -1,5 +1,10 @@
 import "bootstrap";
 import "../scss/style.scss";
+import { createApp } from "vue";
+import App from "../App.vue";
+import { router } from "../router.js";
+
+createApp(App).use(router).mount("#app");
 
 const INPUT_REGEX = /\d+/;
 const CALCULATE_FORM_ID = "calculate",
